@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="./style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,600;1,300;1,400;1,800&display=swap" rel="stylesheet">
+  <link href="./reset.css" rel="stylesheet">
+  
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Age calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <header>
+
+  </header>
+  <section class="main">
+
+    <div class="container-main">
+    <form class="area-input">
+      
+        <div class="divinput">
+          <label id="label-input1">DAY</label>
+          <input type="number" min="1" max="31" placeholder="DD" class="input" id="input-day" maxlength="2" required>
+          <h2 id="DAYerror-info"></h2>
+        </div>
+
+        <div class="divinput">
+          <label id="label-input2">MONTH</label>
+          <input type="number" min="1" max="12" placeholder="MM" class="input" id="input-month" maxlength="2" required>
+          <h2 id="MONTHerror-info"></h2>
+        </div>
+
+        <div class="divinput">
+          <label id="label-input3">YEAR</label>
+          <input type="number" min="1940" max="2100" placeholder="YYYY" class="input" id="input-year" maxlength="4" required>
+          <h2 id="YEARerror-info"></h2>
+        </div>
+
+
+      
+
+      <div class="container-icon">
+        <button type="button" class="button-submit" onclick="CalcularIdade(); Verificar_Inputs()"><img src="./assets/images/icon-arrow.svg"></button>
+
+      </div>
+    </form>
+
+      <div class="area-respost">
+        <div class="respost">
+        <span><span id="respostvalue_years">--</span>years</span>
+        </div>
+        <div class="respost">
+        <span><span id="respostvalue_months">--</span>months</span>
+        </div>
+        <div class="respost">
+        <span><span id="respostvalue_days">--</span>days</span>
+        </div>
+
+      </div>
+
+      
+
+    </div>
+  </section>
+
+
+  <footer>
+  
+ 
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Matheus Marques da Silva</a>.
+  </div>
+  </footer>
+
+  <script src="./script.js"></script>
+</body>
+
+</html>
